@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "open classrooms project 3 - ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://htamlyn@github.com/htamlyn/oc-project3.git"
+  },
+  "author": "helentamlyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htamlyn/oc-project3/issues"
+  },
+  "homepage": "https://github.com/htamlyn/oc-project3#readme"
+}
