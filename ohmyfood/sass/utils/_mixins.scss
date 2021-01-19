@@ -1,0 +1,92 @@
+@mixin font-main_header{
+    font-family: 'Shrikhand', cursive;
+} 
+
+@mixin font-text_xlight{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+@mixin font-text_light{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+@mixin font-text_medium{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+@mixin font-text_regular{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+@mixin header-underline{
+    font-size: 1em;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+        &:before {
+            content: '';
+            border-bottom: 3px solid $color-accent;
+            position: absolute;
+            width: 60%;
+            left: 0;
+            bottom: 0;
+          }
+}
+
+@mixin menu-card{
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 10px#d6d5d5;
+    &--title{
+        @include font-text_regular;
+        font-size: 1.1em;
+        padding-bottom: 5px;
+    }
+    &--notes{
+        @include font-text_xlight;
+        font-size: 0.9em;
+        display: inline-block
+    }
+    &--price{
+        @include font-text_regular;
+        display: inline-block;
+        float: right;
+    }
+}
+
+@mixin order-button{
+    padding: 0.8em;
+    border: none;
+    border-radius: 2em;
+    width: 10em;
+    background: #EC73DA;
+    background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+    background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+    background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+    color: white;
+    @include font-text_regular();
+    font-size: 1em;
+    box-shadow: 0 2px 5px#929191, inset 2px 0 5px #EC73DA;
+}
+
+
+@mixin search-button{
+    padding: 0.8em;
+    border: none;
+    border-radius: 2em;
+    width: 15em;
+    background: #EC73DA;
+    background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+    background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+    background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+    color: white;
+    @include font-text_regular();
+    font-size: 1em;
+    box-shadow: 0 2px 5px#929191, inset 2px 0 5px #EC73DA;
+}

@@ -1,0 +1,7 @@
+.menu__btn{
+    @include order-button;
+}
+
+.search__btn{
+    @include search-button;
+}

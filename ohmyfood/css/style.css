@@ -1,2 +1,255 @@
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.menu__btn {
+  padding: 0.8em;
+  border: none;
+  border-radius: 2em;
+  width: 10em;
+  background: #EC73DA;
+  background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  box-shadow: 0 2px 5px #929191, inset 2px 0 5px #EC73DA;
+}
+
+.search__btn {
+  padding: 0.8em;
+  border: none;
+  border-radius: 2em;
+  width: 15em;
+  background: #EC73DA;
+  background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  box-shadow: 0 2px 5px #929191, inset 2px 0 5px #EC73DA;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 0.5em;
+  position: fixed;
+  top: 0;
+}
+header a {
+  margin-right: auto;
+  color: black;
+}
+header img {
+  width: 180px;
+  margin-left: 65px;
+}
+
+.footerContent {
+  padding: 1.5em;
+  background-color: #353535;
+  color: white;
+  position: relative;
+  top: 350px;
+}
+.footerContent i {
+  margin-right: 0.5em;
+}
+.footerContent__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3em;
+}
+.footerContent__info {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.menu {
+  height: auto;
+}
+.menu img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  top: 80px;
+}
+.menu h1 {
+  display: inline-block;
+  font-size: 2em;
+  width: 85%;
+}
+.menu h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.menu h2:before {
+  content: "";
+  border-bottom: 3px solid #99e2d0;
+  position: absolute;
+  width: 60%;
+  left: 0;
+  bottom: 0;
+}
+
+.menuContent {
+  padding: 1em;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: 350px;
+}
+.menuContent .heart--unselected:active {
+  display: none;
+}
+.menuContent .heart--unselected:active + .heart--selected {
+  display: inline-block;
+  color: #bb62a9;
+}
+.menuContent .heart--selected {
+  display: none;
+}
+
+.menuEntree {
+  margin-bottom: 2em;
+}
+.menuEntree__card {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 10px #d6d5d5;
+}
+.menuEntree__card--title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding-bottom: 5px;
+}
+.menuEntree__card--notes {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 0.9em;
+  display: inline-block;
+}
+.menuEntree__card--price {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  float: right;
+}
+
+.menuMain {
+  margin-bottom: 2em;
+}
+.menuMain__card {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 10px #d6d5d5;
+}
+.menuMain__card--title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding-bottom: 5px;
+}
+.menuMain__card--notes {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 0.9em;
+  display: inline-block;
+}
+.menuMain__card--price {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  float: right;
+}
+
+.menuDessert {
+  margin-bottom: 2em;
+}
+.menuDessert__card {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 10px #d6d5d5;
+}
+.menuDessert__card--title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding-bottom: 5px;
+}
+.menuDessert__card--notes {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 0.9em;
+  display: inline-block;
+}
+.menuDessert__card--price {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  float: right;
+}
+
+.menu__btncontainer {
+  padding: 2em 2em 3em 2em;
+  display: flex;
+  justify-content: center;
+}
+
+#home__header {
+  padding: 1.6em;
+  position: static;
+}
+#home__header-img {
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search input {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+.search h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.information h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.restaurants h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=style.css.map */

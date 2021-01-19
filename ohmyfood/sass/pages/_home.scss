@@ -1,0 +1,34 @@
+#home {
+    &__header{
+    padding: 1.6em;
+    position: static;
+    }
+    &__header-img{
+        margin: 0;
+    }
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & input{
+        @include font-text_medium;
+    }
+    & h2{
+        @include font-text_regular;
+    }
+}
+
+.information{
+    & h2{
+        @include font-text_regular;
+    }
+}
+
+.restaurants{
+    & h2{
+        @include font-text_regular;
+    }
+}
+
