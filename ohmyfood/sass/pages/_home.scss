@@ -1,10 +1,14 @@
 #home {
     &__header{
-    padding: 1.6em;
+    padding: 1em;
+    margin: 0.5em;
     position: static;
     }
     &__header-img{
         margin: 0;
+    }
+    &__footer{
+        position: static;
     }
 }
 
@@ -12,11 +16,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f6f6f6;
     & input{
-        @include font-text_medium;
+        font-family: 'Raleway', 'Font Awesome 5 Free', sans-serif;
+        font-weight: 600;
+        font-size: 1.1em;
+        width: 93%;
+        padding: 0.8em;
+        text-align: center;
+        background-color: #eaeaea;
+        border: none;
+        box-shadow: inset 0 3px 5px #cfcfcf;
     }
     & h2{
         @include font-text_regular;
+        margin-bottom: 1.5em;
+    }
+    & div{
+        padding: 1.5em 2em 4em 2em;
+        text-align: center;
+    }
+    & p{
+        margin-bottom: 2em;
+        color: #6d6c6c;
     }
 }
 
@@ -27,8 +49,74 @@
 }
 
 .restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4em; 
+    padding: 0 1em; 
     & h2{
+        align-self: flex-start;
         @include font-text_regular;
+    }
+}
+
+.restaurant-card{
+    width: 100%; 
+    height: 330px;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px #cfcfcf;
+    margin-bottom: 1em;
+    & img{
+        width: 100%;
+        height: 70%; 
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    &__div{
+        padding: 0 1em;
+        & p{
+            @include font-text_light;
+        }
+        &--link{
+            width: 70%;
+            margin-right: 0;
+            & a{
+            color: black;
+            text-decoration: none;
+            @include font-text_regular; 
+            }
+        }
+
+    }
+    & .heart{
+        &--unselected{
+            float: right;
+            position: relative;
+            bottom: 60px;
+            right: 10px;
+            &:active{
+            display: none;
+                &+ .heart--selected{
+                    display: inline-block;
+                    background:-moz-linear-gradient(-10deg, #A65CDB 0% , #CB68DB 60%, #e984da 100%); 
+                    background: -webkit-linear-gradient(-10deg, #A65CDB 0% , #CB68DB 60%, #e984da 100%); 
+                    background: linear-gradient(180deg,  #A65CDB 0% , #CB68DB 60%, #e984da 100%);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color:transparent;
+                    float: right;
+                    position: relative;
+                    bottom: 60px;
+                    right: 10px;
+                }
+            }
+        }
+        &--selected{
+            display: none;
+
+        }
     }
 }
 

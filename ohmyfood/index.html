@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8d3af4ce61.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/8d3af4ce61.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
+
 <body>
     <header id="home__header">
         <img src="images/logo/ohmyfood.webp" alt="main logo" id="home__header-img">
     </header>
     <section class="search">
-        <input type="text" placeholder="Paris">
-        <h2>Book the menu you like</h2>
-        <button class="search__btn">Explore our restaurants</button>
+        <input type="text" class="fas" placeholder="&#xf3c5    Paris, Belleville">
+        <div>
+            <h2>Book the menu you like</h2>
+            <p>Discover state-of-the-art restaurants we picked for you</p>
+            <button class="search__btn">Explore our restaurants</button>
+        </div>
     </section>
     <section class="information">
         <h2>How it works</h2>
     </section>
     <main class="restaurants">
         <h2>Restaurants</h2>
+        <div class="restaurant-card">
+            <a href="full pallette.html">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+            </a>
+            <div class="restaurant-card__div">
+                <div class="restaurant-card__div--link">
+                    <a href="full pallette.html">
+                        <h3>The Full Pallette</h3>
+                    </a>
+                </div>
+                <p>New York</p>
+                <i class="far fa-heart fa-2x heart--unselected"></i>
+                <i class="fas fa-heart fa-2x heart--selected"></i>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <a href="enchanted.html">
+                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+            </a>
+            <div class="restaurant-card__div">
+                <div class="restaurant-card__div--link">
+                    <a href="full pallette.html">
+                        <h3>The Enchanted Plate</h3>
+                    </a>
+                </div>
+                <p>New York</p>
+                <i class="far fa-heart fa-2x heart--unselected"></i>
+                <i class="fas fa-heart fa-2x heart--selected"></i>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <a href="full pallette.html">
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+            </a>
+            <div class="restaurant-card__div">
+                <div class="restaurant-card__div--link">
+                    <a href="bastille.html">
+                        <h3>Bastille</h3>
+                    </a>
+                </div>
+                <p>New York</p>
+                <i class="far fa-heart fa-2x heart--unselected"></i>
+                <i class="fas fa-heart fa-2x heart--selected"></i>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <a href="gourmand.html">
+                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+            </a>
+            <div class="restaurant-card__div">
+                <div class="restaurant-card__div--link">
+                    <a href="full pallette.html">
+                        <h3>Le Gourmand</h3>
+                    </a>
+                </div>
+                <p>New York</p>
+                <i class="far fa-heart fa-2x heart--unselected"></i>
+                <i class="fas fa-heart fa-2x heart--selected"></i>
+            </div>
+        </div>
     </main>
     <footer>
-        <div class="footerContent">
+        <div class="footerContent" id="home-footer">
             <p class="footerContent__title">ohmyfood</p>
             <p class="footerContent__info"><i class="fas fa-utensils fa-fw"></i>Suggest a restaurant</p>
             <p class="footerContent__info"><i class="fas fa-hands-helping fa-fw"></i>Become a partner</p>
@@ -35,4 +102,5 @@
         </div>
     </footer>
 </body>
+
 </html>

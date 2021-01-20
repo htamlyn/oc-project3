@@ -31,7 +31,13 @@
             display: none;
                 &+ .heart--selected{
                     display: inline-block;
-                    color: #bb62a9;
+                    background:-moz-linear-gradient(-10deg, #A65CDB 0% , #CB68DB 60%, #e984da 100%); 
+                    background: -webkit-linear-gradient(-10deg, #A65CDB 0% , #CB68DB 60%, #e984da 100%); 
+                    background: linear-gradient(180deg,  #A65CDB 0% , #CB68DB 60%, #e984da 100%);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color:transparent;
                 }
             }
         }

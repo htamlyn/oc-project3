@@ -61,6 +61,7 @@
 }
 
 @mixin order-button{
+    cursor: pointer;
     padding: 0.8em;
     border: none;
     border-radius: 2em;
@@ -73,10 +74,15 @@
     @include font-text_regular();
     font-size: 1em;
     box-shadow: 0 2px 5px#929191, inset 2px 0 5px #EC73DA;
+    &:focus{
+        outline: none;
+    }
+
 }
 
 
 @mixin search-button{
+    cursor: pointer;
     padding: 0.8em;
     border: none;
     border-radius: 2em;
@@ -89,4 +95,7 @@
     @include font-text_regular();
     font-size: 1em;
     box-shadow: 0 2px 5px#929191, inset 2px 0 5px #EC73DA;
+    &:focus{
+        outline: none;
+    }
 }
