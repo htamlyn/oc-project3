@@ -277,9 +277,53 @@ header img {
   color: #6d6c6c;
 }
 
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  margin-bottom: 3em;
+}
 .information h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+}
+.information__div {
+  background-color: #f6f6f6;
+  padding: 1.8em 1.8em 1.8em 1em;
+  margin-left: 0.5em;
+  margin-bottom: 1.3em;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 30px;
+  box-shadow: 0 3px 10px #e5e5e5;
+}
+.information__div span {
+  margin-left: 1em;
+}
+.information__div i {
+  color: #7e7e7e;
+}
+.information__div--purple {
+  background-color: #f5edff;
+}
+.information__div--purple i {
+  color: #9356dc;
+}
+.information__div--num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.5em 0.5em 0.7em 0.5em;
+  right: 29px;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
 }
 
 .restaurants {
@@ -287,13 +331,14 @@ header img {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4em;
-  padding: 0 1em;
+  padding: 2em 1em 3em 1em;
+  background-color: #f6f6f6;
 }
 .restaurants h2 {
   align-self: flex-start;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  margin-bottom: 1em;
 }
 
 .restaurant-card {
@@ -308,6 +353,18 @@ header img {
   height: 70%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+}
+.restaurant-card__new {
+  position: relative;
+  margin-top: -35px;
+  left: 110px;
+  top: 70px;
+  background-color: #99e2d0;
+  padding: 0.5em 1.5em;
+  color: #008766;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 .restaurant-card__div {
   padding: 0 1em;
