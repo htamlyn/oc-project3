@@ -4,7 +4,7 @@ h1 {
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .menu__btn {
@@ -14,14 +14,20 @@ body {
   border-radius: 2em;
   width: 10em;
   background: #EC73DA;
-  background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-  background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-  background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  background: -moz-linear-gradient(-10deg, #FF79DA 0%, #CB68DB 40%, #9356DC 100%);
+  background: -webkit-linear-gradient(-10deg, #FF79DA 0%, #CB68DB 40%, #9356DC 100%);
+  background: linear-gradient(170deg, #FF79DA 0%, #CB68DB 40%, #9356DC 100%);
+  box-shadow: 0 2px 5px #929191, inset 2px 0 5px #FF79DA;
   color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 1em;
-  box-shadow: 0 2px 5px #929191, inset 2px 0 5px #EC73DA;
+}
+.menu__btn:hover {
+  background: -moz-linear-gradient(-10deg, #FF93F4 0%, #E582F5 40%, #AD70F6 100%);
+  background: -webkit-linear-gradient(-10deg, #FF93F4 0%, #E582F5 40%, #AD70F6 100%);
+  background: linear-gradient(170deg, #FF93F4 0%, #E582F5 40%, #AD70F6 100%);
+  box-shadow: 0 2px 5px #5F5E5E, inset 2px 0 5px #FF93F4;
 }
 .menu__btn:focus {
   outline: none;
@@ -33,15 +39,21 @@ body {
   border: none;
   border-radius: 2em;
   width: 15em;
-  background: #EC73DA;
-  background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-  background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-  background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+  background: #FF79DA;
+  background: -moz-linear-gradient(-10deg, #FF79DA 0%, #CB68DB 40%, #9356DC 100%);
+  background: -webkit-linear-gradient(-10deg, #FF79DA 0%, #CB68DB 40%, #9356DC 100%);
+  background: linear-gradient(170deg, #FF79DA 0%, #CB68DB 40%, #9356DC 100%);
+  box-shadow: 0 2px 5px #929191, inset 2px 0 5px #FF79DA;
   color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 1em;
-  box-shadow: 0 2px 5px #929191, inset 2px 0 5px #EC73DA;
+}
+.search__btn:hover {
+  background: -moz-linear-gradient(-10deg, #FF93F4 0%, #E582F5 40%, #AD70F6 100%);
+  background: -webkit-linear-gradient(-10deg, #FF93F4 0%, #E582F5 40%, #AD70F6 100%);
+  background: linear-gradient(170deg, #FF93F4 0%, #E582F5 40%, #AD70F6 100%);
+  box-shadow: 0 2px 5px #5F5E5E, inset 2px 0 5px #FF93F4;
 }
 .search__btn:focus {
   outline: none;
@@ -75,12 +87,19 @@ header img {
 .footerContent i {
   margin-right: 0.5em;
 }
+.footerContent a {
+  color: white;
+  text-decoration: none;
+}
+.footerContent a:hover {
+  color: #9356DC;
+}
 .footerContent__title {
   font-family: "Shrikhand", cursive;
   font-size: 1.3em;
 }
 .footerContent__info {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -101,7 +120,7 @@ header img {
   width: 85%;
 }
 .menu h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1em;
   position: relative;
@@ -124,14 +143,14 @@ header img {
   position: relative;
   top: 350px;
 }
-.menuContent .heart--unselected:active {
+.menuContent .heart--unselected:hover {
   display: none;
 }
-.menuContent .heart--unselected:active + .heart--selected {
+.menuContent .heart--unselected:hover + .heart--selected {
   display: inline-block;
-  background: -moz-linear-gradient(-10deg, #A65CDB 0%, #CB68DB 60%, #e984da 100%);
-  background: -webkit-linear-gradient(-10deg, #A65CDB 0%, #CB68DB 60%, #e984da 100%);
-  background: linear-gradient(180deg, #A65CDB 0%, #CB68DB 60%, #e984da 100%);
+  background: -moz-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
+  background: -webkit-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
+  background: linear-gradient(180deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -152,20 +171,20 @@ header img {
   box-shadow: 0 2px 10px #d6d5d5;
 }
 .menuEntree__card--title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 1.1em;
   padding-bottom: 5px;
 }
 .menuEntree__card--notes {
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 0.9em;
   display: inline-block;
 }
 .menuEntree__card--price {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   display: inline-block;
   float: right;
 }
@@ -181,20 +200,20 @@ header img {
   box-shadow: 0 2px 10px #d6d5d5;
 }
 .menuMain__card--title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 1.1em;
   padding-bottom: 5px;
 }
 .menuMain__card--notes {
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 0.9em;
   display: inline-block;
 }
 .menuMain__card--price {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   display: inline-block;
   float: right;
 }
@@ -210,20 +229,20 @@ header img {
   box-shadow: 0 2px 10px #d6d5d5;
 }
 .menuDessert__card--title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 1.1em;
   padding-bottom: 5px;
 }
 .menuDessert__card--notes {
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 0.9em;
   display: inline-block;
 }
 .menuDessert__card--price {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   display: inline-block;
   float: right;
 }
@@ -264,7 +283,7 @@ header img {
   box-shadow: inset 0 3px 5px #cfcfcf;
 }
 .search h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   margin-bottom: 1.5em;
 }
@@ -284,7 +303,7 @@ header img {
   margin-bottom: 3em;
 }
 .information h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 .information__div {
@@ -294,7 +313,7 @@ header img {
   margin-bottom: 1.3em;
   display: flex;
   align-items: center;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 1em;
   border-radius: 30px;
@@ -310,7 +329,7 @@ header img {
   background-color: #f5edff;
 }
 .information__div--purple i {
-  color: #9356dc;
+  color: #9356DC;
 }
 .information__div--num {
   display: flex;
@@ -319,7 +338,7 @@ header img {
   position: relative;
   padding: 0.5em 0.5em 0.7em 0.5em;
   right: 29px;
-  background-color: #9356dc;
+  background-color: #9356DC;
   color: white;
   border-radius: 50%;
   height: 10px;
@@ -336,7 +355,7 @@ header img {
 }
 .restaurants h2 {
   align-self: flex-start;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   margin-bottom: 1em;
 }
@@ -363,14 +382,14 @@ header img {
   padding: 0.5em 1.5em;
   color: #008766;
   border-radius: 5px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 .restaurant-card__div {
   padding: 0 1em;
 }
 .restaurant-card__div p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 .restaurant-card__div--link {
@@ -380,34 +399,62 @@ header img {
 .restaurant-card__div--link a {
   color: black;
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
-.restaurant-card .heart--unselected {
+
+.heart {
+  overflow: hidden;
   float: right;
   position: relative;
   bottom: 60px;
   right: 10px;
+  width: 50px;
 }
-.restaurant-card .heart--unselected:active {
-  display: none;
+.heart--cover {
+  width: 50px;
+  height: 50px;
+  background-color: #f6f6f6;
+  float: right;
+  position: relative;
+  left: 60px;
 }
-.restaurant-card .heart--unselected:active + .heart--selected {
-  display: inline-block;
-  background: -moz-linear-gradient(-10deg, #A65CDB 0%, #CB68DB 60%, #e984da 100%);
-  background: -webkit-linear-gradient(-10deg, #A65CDB 0%, #CB68DB 60%, #e984da 100%);
-  background: linear-gradient(180deg, #A65CDB 0%, #CB68DB 60%, #e984da 100%);
+.heart--unselected {
+  float: right;
+}
+.heart--selected {
+  background: -moz-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
+  background: -webkit-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
+  background: linear-gradient(180deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  float: right;
   position: relative;
-  bottom: 60px;
-  right: 10px;
+  right: 40px;
 }
-.restaurant-card .heart--selected {
+:hover > .heart--unselected {
   display: none;
+}
+:hover > .heart--cover {
+  animation: rise ease-out 1.5s;
+}
+:hover > .heart--selected {
+  position: static;
+  float: right;
+}
+
+@keyframes rise {
+  0% {
+    position: relative;
+    left: 5px;
+    bottom: 40px;
+  }
+  100% {
+    position: relative;
+    left: 5px;
+    bottom: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

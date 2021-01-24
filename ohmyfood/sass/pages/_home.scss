@@ -29,7 +29,7 @@
         box-shadow: inset 0 3px 5px #cfcfcf;
     }
     & h2{
-        @include font-text_regular;
+        @include font-text_medium;
         margin-bottom: 1.5em;
     }
     & div{
@@ -48,7 +48,7 @@
     padding: 0 1em;
     margin-bottom: 3em;
     & h2{
-        @include font-text_regular; 
+        @include font-text_medium; 
     }
     &__div{
         background-color: #f6f6f6;
@@ -57,7 +57,7 @@
         margin-bottom: 1.3em; 
         display: flex;
         align-items: center;
-        @include font-text_regular;
+        @include font-text_medium;
         font-size: 1em; 
         border-radius: 30px;
         box-shadow: 0 3px 10px #e5e5e5;;
@@ -70,7 +70,7 @@
         &--purple{
             background-color: #f5edff;
             & i{
-                color: #9356dc;
+                color: $color-primary;
             }
         }
         &--num{
@@ -80,7 +80,7 @@
             position: relative;
             padding: 0.5em 0.5em 0.7em 0.5em;
             right: 29px; 
-            background-color: #9356dc;
+            background-color: $color-primary;
             color: white;
             border-radius: 50%;
             height: 10px;
@@ -98,7 +98,7 @@
     background-color: #f6f6f6;
     & h2{
         align-self: flex-start;
-        @include font-text_regular;
+        @include font-text_medium;
         margin-bottom: 1em;
     }
 }
@@ -120,11 +120,11 @@
         margin-top: -35px;
         left: 110px;
         top: 70px;
-        background-color: $color-accent;
+        background-color: $color-tertiary;
         padding: 0.5em 1.5em;
         color: #008766;
         border-radius: 5px;
-        @include font-text_regular;
+        @include font-text_medium;
     }
     &__div{
         padding: 0 1em;
@@ -137,40 +137,56 @@
             & a{
             color: black;
             text-decoration: none;
-            @include font-text_regular; 
+            @include font-text_medium; 
             }
         }
 
-    }
-    & .heart{
-        &--unselected{
-            float: right;
-            position: relative;
-            bottom: 60px;
-            right: 10px;
-            &:active{
-            display: none;
-                &+ .heart--selected{
-                    display: inline-block;
-                    background:-moz-linear-gradient(-10deg, #A65CDB 0% , #CB68DB 60%, #e984da 100%); 
-                    background: -webkit-linear-gradient(-10deg, #A65CDB 0% , #CB68DB 60%, #e984da 100%); 
-                    background: linear-gradient(180deg,  #A65CDB 0% , #CB68DB 60%, #e984da 100%);
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color:transparent;
-                    float: right;
-                    position: relative;
-                    bottom: 60px;
-                    right: 10px;
-                }
-            }
-        }
-        &--selected{
-            display: none;
-
-        }
     }
 }
 
+    .heart{
+        overflow: hidden;
+        float: right;
+        position: relative;
+        bottom: 60px;
+        right: 10px;
+        width: 50px;
+        &--cover{
+            width: 50px; 
+            height: 50px;
+            background-color: #f6f6f6; 
+            float: right;
+            position: relative;
+            left: 60px; 
+        }
+        &--unselected{
+            float: right;
+        }
+        &--selected{
+            @include color-fill;
+            position: relative;
+            right: 40px;
+        }
+        :hover > &--unselected{
+            display: none;
+        }
+        :hover > &--cover{
+            animation: rise ease-out 1.5s; 
+        }
+        :hover > &--selected{
+            position: static;
+            float: right;
+        }
+    }
+
+
+@keyframes rise{
+    0% {position: relative;
+        left: 5px;
+        bottom: 40px;} 
+    100% {position: relative;
+            left:5px;
+            bottom:100px;
+        }
+}
 

@@ -3,23 +3,23 @@
 } 
 
 @mixin font-text_xlight{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 @mixin font-text_light{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
 @mixin font-text_medium{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 @mixin font-text_regular{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 @mixin header-underline{
@@ -29,7 +29,7 @@
         padding-bottom: 10px;
         &:before {
             content: '';
-            border-bottom: 3px solid $color-accent;
+            border-bottom: 3px solid $color-tertiary;
             position: absolute;
             width: 60%;
             left: 0;
@@ -60,6 +60,21 @@
     }
 }
 
+@mixin button-gradient{
+    background: -moz-linear-gradient(-10deg, $color-secondary 0%, #CB68DB 40%, $color-primary 100%);
+    background: -webkit-linear-gradient(-10deg, $color-secondary 0%, #CB68DB 40%, $color-primary 100%);
+    background: linear-gradient(170deg, $color-secondary 0%, #CB68DB 40%, $color-primary 100%);
+    box-shadow: 0 2px 5px#929191, inset 2px 0 5px $color-secondary;
+}
+
+@mixin button-gradient-light{
+    background: -moz-linear-gradient(-10deg, $color-secondary-light 0%, #E582F5 40%, $color-primary-light 100%);
+    background: -webkit-linear-gradient(-10deg, $color-secondary-light 0%, #E582F5 40%, $color-primary-light 100%);
+    background: linear-gradient(170deg, $color-secondary-light 0%, #E582F5 40%, $color-primary-light 100%);
+    box-shadow: 0 2px 5px#5F5E5E, inset 2px 0 5px $color-secondary-light;
+
+}
+
 @mixin order-button{
     cursor: pointer;
     padding: 0.8em;
@@ -67,17 +82,16 @@
     border-radius: 2em;
     width: 10em;
     background: #EC73DA;
-    background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-    background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-    background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+   @include button-gradient();
     color: white;
     @include font-text_regular();
     font-size: 1em;
-    box-shadow: 0 2px 5px#929191, inset 2px 0 5px #EC73DA;
+    &:hover{
+        @include button-gradient-light();
+    }
     &:focus{
         outline: none;
     }
-
 }
 
 
@@ -87,15 +101,25 @@
     border: none;
     border-radius: 2em;
     width: 15em;
-    background: #EC73DA;
-    background: -moz-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-    background: -webkit-linear-gradient(-10deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
-    background: linear-gradient(170deg, #e984da 0%, #CB68DB 40%, #A65CDB 100%);
+    background: $color-secondary;
+    @include button-gradient();
     color: white;
     @include font-text_regular();
     font-size: 1em;
-    box-shadow: 0 2px 5px#929191, inset 2px 0 5px #EC73DA;
+    &:hover{
+        @include button-gradient-light();
+    }
     &:focus{
         outline: none;
     }
+}
+
+@mixin color-fill{
+    background:-moz-linear-gradient(-10deg, $color-primary 0% , #CB68DB 60%, $color-secondary 100%); 
+    background: -webkit-linear-gradient(-10deg, $color-primary 0% , #CB68DB 60%, $color-secondary 100%); 
+    background: linear-gradient(180deg,  $color-primary 0% , #CB68DB 60%, $color-secondary 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
 }

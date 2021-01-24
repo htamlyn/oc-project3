@@ -7,11 +7,18 @@
     & i{
         margin-right: 0.5em;
     }
+    & a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: $color-primary; 
+        }
+    }
     &__title{
         @include font-main_header;
         font-size: 1.3em;
     }
     &__info{
-        @include font-text_medium;
+        @include font-text_regular;
     }
 } 
