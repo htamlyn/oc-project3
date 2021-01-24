@@ -434,26 +434,42 @@ header img {
   right: 40px;
 }
 :hover > .heart--unselected {
-  display: none;
+  position: relative;
+  z-index: 3;
+  background: none;
+  animation: 257.611ms disappear 441.763ms forwards;
 }
 :hover > .heart--cover {
   animation: rise ease-out 1.5s;
 }
 :hover > .heart--selected {
-  position: static;
+  position: relative;
   float: right;
+  left: 0px;
+  bottom: 32px;
+  z-index: 1;
 }
 
 @keyframes rise {
   0% {
     position: relative;
     left: 5px;
-    bottom: 40px;
+    bottom: 83px;
+    z-index: 2;
   }
   100% {
     position: relative;
     left: 5px;
-    bottom: 100px;
+    bottom: 140px;
+    z-index: 2;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
