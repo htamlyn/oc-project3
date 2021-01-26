@@ -13,88 +13,105 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-        </a>
-        <img src="images/logo/ohmyfood.webp" alt="main logo">
+    <header class="header">
+        <div class="header__content">
+            <img src="images/logo/ohmyfood.webp" alt="main logo">
+            <div class="header__tohome">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
     </header>
-        <main class="menu">
-            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp" alt="A plate at Full Pallette">
-            <section class="menuContent">
-                <div>
-                    <h1>The Full Pallette</h1>
+    <main class="menu">
+        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp" alt="A plate at Full Pallette">
+        <section class="menu__content">
+            <div>
+                <h1>The Full Pallette</h1>
+                <div class="menu__heart">
                     <i class="far fa-heart fa-2x heart--unselected"></i>
                     <i class="fas fa-heart fa-2x heart--selected"></i>
+                    <div class="heart--cover"></div>
                 </div>
-                <div class="menuEntree">
-                    <h2>ENTREES</h2>
-                    <div class="menuEntree__card">
-                        <div class="menuEntree__card--title">Escargot</div>
-                        <div class="menuEntree__card--notes">with southern French spices</div>
-                        <div class="menuEntree__card--price">25€</div>
-                    </div>
-                    <div class="menuEntree__card">
-                        <div class="menuEntree__card--title">Duck Foie Gras</div>
-                        <div class="menuEntree__card--notes">with black truffle shavings</div>
-                        <div class="menuEntree__card--price">35€</div>
-                    </div>
-                    <div class="menuEntree__card">
-                        <div class="menuEntree__card--title">Fried Egg</div>
-                        <div class="menuEntree__card--notes">Revisited</div>
-                        <div class="menuEntree__card--price">20€</div>
-                    </div>
-                </div>
-                <div class="menuMain">
-                    <h2>MAIN DISH</h2>
-                    <div class="menuMain__card">
-                        <div class="menuMain__card--title">Herb-Encrusted Steak</div>
-                        <div class="menuMain__card--notes">with delicately sliced and seasoned veg...</div>
-                        <div class="menuMain__card--price">40€</div>
-                    </div>
-                    <div class="menuMain__card">
-                        <div class="menuMain__card--title">Ox Tail Shepherd's Pie</div>
-                        <div class="menuMain__card--notes">with black truffle and pureed parsnips</div>
-                        <div class="menuMain__card--price">35€</div>
-                    </div>
-                    <div class="menuMain__card">
-                        <div class="menuMain__card--title">Filet of Sole</div>
-                        <div class="menuMain__card--notes">with citrus dressing</div>
-                        <div class="menuMain__card--price">44€</div>
-                    </div>
-                </div>
-                <div class="menuDessert">
-                    <h2>DESSERTS</h2>
-                    <div class="menuDessert__card">
-                        <div class="menuDessert__card--title">Paris-Brest</div>
-                        <div class="menuDessert__card--notes">Revisited</div>
-                        <div class="menuDessert__card--price">18€</div>
-                    </div>
-                    <div class="menuDessert__card">
-                        <div class="menuDessert__card--title">Chocolate Macaroons</div>
-                        <div class="menuDessert__card--notes">with vanilla ice cream</div>
-                        <div class="menuDessert__card--price">22€</div>
-                    </div>
-                    <div class="menuDessert__card">
-                        <div class="menuDessert__card--title">Chocolate Mousse</div>
-                        <div class="menuDessert__card--notes">with spices and black truffle</div>
-                        <div class="menuDessert__card--price">23€</div>
-                    </div>
-                </div>
-                <div class="menu__btncontainer">
-                    <button class="menu__btn">Order</button>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footerContent">
-                <p class="footerContent__title">ohmyfood</p>
-                <a href="#"><p class="footerContent__info"><i class="fas fa-utensils fa-fw"></i>Suggest a restaurant</p></a> 
-                <a href="#"><p class="footerContent__info"><i class="fas fa-hands-helping fa-fw"></i>Become a partner</p></a> 
-                <a href="#"><p class="footerContent__info">Legal</p></a> 
-                <a href="mailto: abc@example.com"><p class="footerContent__info">Contact</p></a> 
             </div>
-        </footer>
+            <div class="menu__container">
+                <div class="menu__entree">
+                    <h2>ENTREES</h2>
+                    <div class="menu__entree__card">
+                        <div class="menu__entree__card--title">Escargot</div>
+                        <div class="menu__entree__card--notes">with southern French spices</div>
+                        <div class="menu__entree__card--price">25€</div>
+                    </div>
+                    <div class="menu__entree__card">
+                        <div class="menu__entree__card--title">Duck Foie Gras</div>
+                        <div class="menu__entree__card--notes">with black truffle shavings</div>
+                        <div class="menu__entree__card--price">35€</div>
+                    </div>
+                    <div class="menu__entree__card">
+                        <div class="menu__entree__card--title">Fried Egg</div>
+                        <div class="menu__entree__card--notes">Revisited</div>
+                        <div class="menu__entree__card--price">20€</div>
+                    </div>
+                </div>
+                <div class="menu__main">
+                    <h2>MAIN DISH</h2>
+                    <div class="menu__main__card">
+                        <div class="menu__main__card--title">Herb-Encrusted Steak</div>
+                        <div class="menu__main__card--notes">with delicately sliced and seasoned veg...</div>
+                        <div class="menu__main__card--price">40€</div>
+                    </div>
+                    <div class="menu__main__card">
+                        <div class="menu__main__card--title">Ox Tail Shepherd's Pie</div>
+                        <div class="menu__main__card--notes">with black truffle and pureed parsnips</div>
+                        <div class="menu__main__card--price">35€</div>
+                    </div>
+                    <div class="menu__main__card">
+                        <div class="menu__main__card--title">Filet of Sole</div>
+                        <div class="menu__main__card--notes">with citrus dressing</div>
+                        <div class="menu__main__card--price">44€</div>
+                    </div>
+                </div>
+                <div class="menu__dessert">
+                    <h2>DESSERTS</h2>
+                    <div class="menu__dessert__card">
+                        <div class="menu__dessert__card--title">Paris-Brest</div>
+                        <div class="menu__dessert__card--notes">Revisited</div>
+                        <div class="menu__dessert__card--price">18€</div>
+                    </div>
+                    <div class="menu__dessert__card">
+                        <div class="menu__dessert__card--title">Chocolate Macaroons</div>
+                        <div class="menu__dessert__card--notes">with vanilla ice cream</div>
+                        <div class="menu__dessert__card--price">22€</div>
+                    </div>
+                    <div class="menu__dessert__card">
+                        <div class="menu__dessert__card--title">Chocolate Mousse</div>
+                        <div class="menu__dessert__card--notes">with spices and black truffle</div>
+                        <div class="menu__dessert__card--price">23€</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__btncontainer">
+                <button class="menu__btn">Order</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <p class="footerContent__title">ohmyfood</p>
+            <a href="#">
+                <p class="footerContent__info"><i class="fas fa-utensils fa-fw"></i>Suggest a restaurant</p>
+            </a>
+            <a href="#">
+                <p class="footerContent__info"><i class="fas fa-hands-helping fa-fw"></i>Become a partner</p>
+            </a>
+            <a href="#">
+                <p class="footerContent__info">Legal</p>
+            </a>
+            <a href="mailto: abc@example.com">
+                <p class="footerContent__info">Contact</p>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

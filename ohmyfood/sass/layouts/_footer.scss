@@ -21,4 +21,13 @@
     &__info{
         @include font-text_regular;
     }
+    @include for-tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__title{
+            width: 100%;
+        }
+    }
 } 

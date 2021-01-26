@@ -1,18 +1,32 @@
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header{
+    width: 87%;
     padding: 1em;
     margin: 0.5em;
     position: fixed;
     top: 0;
-    & a{
-        margin-right: auto;
-        color: black;
+    @include for-tablet{
+        width: 94%;
     }
-    & img{
-        width: 180px;
-        margin-left: 65px;
+    @include for-small-desktop{
+        width: 95.5%;
+    }
+    &__content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & img{
+            width: 180px;
+        }
+    }
+    &__tohome{
+        position: relative;
+        bottom: 25px;
+        align-self: flex-start;
+        & a{
+            color: black; 
+        }
     }
 }
 

@@ -1,11 +1,14 @@
 #home {
     &__header{
-    padding: 1em;
-    margin: 0.5em;
+    padding: 1.5em;
+    margin: 0; 
     position: static;
+    display: flex;
+    justify-content: center;
     }
     &__header-img{
         margin: 0;
+        width: 180px;
     }
     &__footer{
         position: static;
@@ -18,15 +21,24 @@
     align-items: center;
     background-color: #f6f6f6;
     & input{
-        font-family: 'Raleway', 'Font Awesome 5 Free', sans-serif;
+        font-family: 'Roboto', 'Font Awesome 5 Free', sans-serif;
         font-weight: 600;
         font-size: 1.1em;
-        width: 93%;
+        width: 92%;
         padding: 0.8em;
         text-align: center;
         background-color: #eaeaea;
         border: none;
         box-shadow: inset 0 3px 5px #cfcfcf;
+        @include for-tablet{
+            width: 96%;
+        }
+        @include for-small-desktop{
+            width: 98%;
+        }
+        &:focus{
+            outline: none;
+        }
     }
     & h2{
         @include font-text_medium;
@@ -47,8 +59,20 @@
     flex-direction: column;
     padding: 0 1em;
     margin-bottom: 3em;
+    @include for-tablet{
+        align-items: center;
+        padding-top: 1.5em;
+    }
+    @include for-small-desktop{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     & h2{
-        @include font-text_medium; 
+        @include font-text_medium;  
+        @include for-small-desktop{
+            width: 100%;
+        }
     }
     &__div{
         background-color: #f6f6f6;
@@ -61,6 +85,12 @@
         font-size: 1em; 
         border-radius: 30px;
         box-shadow: 0 3px 10px #e5e5e5;;
+        @include for-tablet{
+            width: 40%;
+        }
+        @include for-small-desktop{
+            width: 25%;
+        }
         & span{
             margin-left: 1em;
         }
@@ -96,10 +126,17 @@
     justify-content: space-between;
     padding: 2em 1em 3em 1em; 
     background-color: #f6f6f6;
+    @include for-tablet{
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
     & h2{
         align-self: flex-start;
         @include font-text_medium;
         margin-bottom: 1em;
+        @include for-tablet{
+            width: 80%; 
+        }
     }
 }
 
@@ -109,6 +146,9 @@
     border-radius: 20px;
     box-shadow: 0 3px 5px #cfcfcf;
     margin-bottom: 1em;
+    @include for-tablet{
+        width: 48%;
+    }
     & img{
         width: 100%;
         height: 70%; 
@@ -116,10 +156,11 @@
         border-radius: 20px 20px 0 0;
     }
     &__new{
+        width: max-content;
         position: relative;
         margin-top: -35px;
-        left: 110px;
-        top: 70px;
+        left: 70%;
+        top: 60px;
         background-color: $color-tertiary;
         padding: 0.5em 1.5em;
         color: #008766;
@@ -144,46 +185,46 @@
     }
 }
 
-    .heart{
-        overflow: hidden;
+.heart{
+    overflow: hidden;
+    float: right;
+    position: relative;
+    bottom: 60px;
+    right: 10px;
+    width: 50px;
+    &--cover{
+        width: 50px; 
+        height: 50px;
+        background-color: #f6f6f6; 
         float: right;
         position: relative;
-        bottom: 60px;
-        right: 10px;
-        width: 50px;
-        &--cover{
-            width: 50px; 
-            height: 50px;
-            background-color: #f6f6f6; 
-            float: right;
-            position: relative;
-            left: 60px; 
-        }
-        &--unselected{
-            float: right;
-        }
-        &--selected{
-            @include color-fill;
-            position: relative;
-            right: 40px;
-        }
-        :hover > &--unselected{
-            position: relative;
-            z-index: 3; 
-            background: none;
-            animation: 257.611ms disappear 441.763ms forwards;
-        }
-        :hover > &--cover{
-            animation: rise ease-out 1.5s; 
-        }
-        :hover > &--selected{
-            position: relative;
-            float: right;
-            left: 0px;
-            bottom: 32px;
-            z-index: 1;
-        }
+        left: 60px; 
     }
+    &--unselected{
+        float: right;
+    }
+    &--selected{
+        @include color-fill;
+        position: relative;
+        right: 40px;
+    }
+    :hover > &--unselected{
+        position: relative;
+        z-index: 3; 
+        background: none;
+        animation: 257.611ms disappear 441.763ms forwards;
+    }
+    :hover > &--cover{
+        animation: rise ease-out 1.5s; 
+    }
+    :hover > &--selected{
+        position: relative;
+        float: right;
+        left: 0px;
+        bottom: 32px;
+        z-index: 1;
+    }
+}
 
 
 @keyframes rise{
@@ -201,6 +242,58 @@
 @keyframes disappear{
     0% {opacity: 1;}
     100% {opacity: 0;}
-    // 100% {opacity: 0;}
+}
+
+.loading{
+    position: fixed;
+    background-color: rgba(246, 246, 246, 0.9);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 0.2s remove 4s linear forwards;
+    &__spinner{
+        position: fixed;
+        padding: 5em;
+        border-radius: 50%;
+        @include loading-gradient;
+        animation: spin 1s infinite;
+    }
+    &__icon{
+        position: relative;
+        vertical-align: middle;
+        height: 1.2em;
+        padding: 0.8em;
+        background-color: rgba(246, 246, 246, 0.7);
+        border-radius: 50%;
+        color: $color-primary;
+        animation: 1s wiggle 0.5s linear infinite; 
+    }
+}
+
+@keyframes remove{
+    0% {opacity: 1;}
+    80% {opacity: 0;
+        transform: translateX(0);}
+    90% {transform: translateX(0);}
+    100% {transform: translateX(100%);}
+}
+
+@keyframes spin{
+    to {transform: rotate(360deg);
+        animation-timing-function: cubic-bezier(.39,.01,.67,.99);    
+    }
+}
+
+@keyframes wiggle{
+    0% {transform: rotate(0);}
+    10% {transform: rotate(10deg);}
+    20% {transform: rotate(0);}
+    30% {transform: rotate(-10deg);}
+    40% {transform: rotate(0);}
+    100% {transform: rotate(0);}
 }
 

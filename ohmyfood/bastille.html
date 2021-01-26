@@ -13,72 +13,81 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-        </a>
-        <img src="images/logo/ohmyfood.webp" alt="main logo">
+    <header class="header">
+        <div class="header__content">
+            <img src="images/logo/ohmyfood.webp" alt="main logo">
+            <div class="header__tohome">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
     </header>
     <main class="menu">
         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.webp" alt="A plate at Bastille">
-        <section class="menuContent">
+        <section class="menu__content">
             <div>
                 <h1>Bastille</h1>
-                <i class="far fa-heart fa-2x heart--unselected"></i>
-                <i class="fas fa-heart fa-2x heart--selected"></i>
-            </div>
-            <div class="menuEntree">
-                <h2>ENTREES</h2>
-                <div class="menuEntree__card">
-                    <div class="menuEntree__card--title">Citrus Squid Carpaccio</div>
-                    <div class="menuEntree__card--notes">with orange zest</div>
-                    <div class="menuEntree__card--price">25€</div>
-                </div>
-                <div class="menuEntree__card">
-                    <div class="menuEntree__card--title">Grandmother's Vegetable Soup</div>
-                    <div class="menuEntree__card--notes">Carrots, parsnips, Jerusalem artichoke</div>
-                    <div class="menuEntree__card--price">35€</div>
-                </div>
-                <div class="menuEntree__card">
-                    <div class="menuEntree__card--title">Onion Soup</div>
-                    <div class="menuEntree__card--notes">Revisited</div>
-                    <div class="menuEntree__card--price">20€</div>
+                <div class="menu__heart">
+                    <i class="far fa-heart fa-2x heart--unselected"></i>
+                    <i class="fas fa-heart fa-2x heart--selected"></i>
+                    <div class="heart--cover"></div>
                 </div>
             </div>
-            <div class="menuMain">
-                <h2>MAIN DISH</h2>
-                <div class="menuMain__card">
-                    <div class="menuMain__card--title">Scallops</div>
-                    <div class="menuMain__card--notes">with mashed parsnip</div>
-                    <div class="menuMain__card--price">40€</div>
+            <div class="menu__container">
+                <div class="menu__entree">
+                    <h2>ENTREES</h2>
+                    <div class="menu__entree__card">
+                        <div class="menu__entree__card--title">Citrus Squid Carpaccio</div>
+                        <div class="menu__entree__card--notes">with orange zest</div>
+                        <div class="menu__entree__card--price">25€</div>
+                    </div>
+                    <div class="menu__entree__card">
+                        <div class="menu__entree__card--title">Grandmother's Vegetable Soup</div>
+                        <div class="menu__entree__card--notes">Carrots, parsnips, Jerusalem artichoke</div>
+                        <div class="menu__entree__card--price">35€</div>
+                    </div>
+                    <div class="menu__entree__card">
+                        <div class="menu__entree__card--title">Onion Soup</div>
+                        <div class="menu__entree__card--notes">Revisited</div>
+                        <div class="menu__entree__card--price">20€</div>
+                    </div>
                 </div>
-                <div class="menuMain__card">
-                    <div class="menuMain__card--title">Magret de canard</div>
-                    <div class="menuMain__card--notes">with mashed potatoes</div>
-                    <div class="menuMain__card--price">35€</div>
+                <div class="menu__main">
+                    <h2>MAIN DISH</h2>
+                    <div class="menu__main__card">
+                        <div class="menu__main__card--title">Scallops</div>
+                        <div class="menu__main__card--notes">with mashed parsnip</div>
+                        <div class="menu__main__card--price">40€</div>
+                    </div>
+                    <div class="menu__main__card">
+                        <div class="menu__main__card--title">Magret de canard</div>
+                        <div class="menu__main__card--notes">with mashed potatoes</div>
+                        <div class="menu__main__card--price">35€</div>
+                    </div>
+                    <div class="menu__main__card">
+                        <div class="menu__main__card--title">Game Hen</div>
+                        <div class="menu__main__card--notes">with vegetable gnocchis</div>
+                        <div class="menu__main__card--price">44€</div>
+                    </div>
                 </div>
-                <div class="menuMain__card">
-                    <div class="menuMain__card--title">Game Hen</div>
-                    <div class="menuMain__card--notes">with vegetable gnocchis</div>
-                    <div class="menuMain__card--price">44€</div>
-                </div>
-            </div>
-            <div class="menuDessert">
-                <h2>DESSERTS</h2>
-                <div class="menuDessert__card">
-                    <div class="menuDessert__card--title">Floral Ice Cream</div>
-                    <div class="menuDessert__card--notes">with hazelnut butter</div>
-                    <div class="menuDessert__card--price">18€</div>
-                </div>
-                <div class="menuDessert__card">
-                    <div class="menuDessert__card--title">Chocolate Lava Cake</div>
-                    <div class="menuDessert__card--notes">Revisited</div>
-                    <div class="menuDessert__card--price">22€</div>
-                </div>
-                <div class="menuDessert__card">
-                    <div class="menuDessert__card--title">Naplolean</div>
-                    <div class="menuDessert__card--notes">with blueberries and marzipan</div>
-                    <div class="menuDessert__card--price">23€</div>
+                <div class="menu__dessert">
+                    <h2>DESSERTS</h2>
+                    <div class="menu__dessert__card">
+                        <div class="menu__dessert__card--title">Floral Ice Cream</div>
+                        <div class="menu__dessert__card--notes">with hazelnut butter</div>
+                        <div class="menu__dessert__card--price">18€</div>
+                    </div>
+                    <div class="menu__dessert__card">
+                        <div class="menu__dessert__card--title">Chocolate Lava Cake</div>
+                        <div class="menu__dessert__card--notes">Revisited</div>
+                        <div class="menu__dessert__card--price">22€</div>
+                    </div>
+                    <div class="menu__dessert__card">
+                        <div class="menu__dessert__card--title">Naplolean</div>
+                        <div class="menu__dessert__card--notes">with blueberries and marzipan</div>
+                        <div class="menu__dessert__card--price">23€</div>
+                    </div>
                 </div>
             </div>
             <div class="menu__btncontainer">
@@ -89,10 +98,18 @@
     <footer>
         <div class="footerContent">
             <p class="footerContent__title">ohmyfood</p>
-            <a href="#"><p class="footerContent__info"><i class="fas fa-utensils fa-fw"></i>Suggest a restaurant</p></a> 
-            <a href="#"><p class="footerContent__info"><i class="fas fa-hands-helping fa-fw"></i>Become a partner</p></a> 
-            <a href="#"><p class="footerContent__info">Legal</p></a> 
-            <a href="mailto: abc@example.com"><p class="footerContent__info">Contact</p></a> 
+            <a href="#">
+                <p class="footerContent__info"><i class="fas fa-utensils fa-fw"></i>Suggest a restaurant</p>
+            </a>
+            <a href="#">
+                <p class="footerContent__info"><i class="fas fa-hands-helping fa-fw"></i>Become a partner</p>
+            </a>
+            <a href="#">
+                <p class="footerContent__info">Legal</p>
+            </a>
+            <a href="mailto: abc@example.com">
+                <p class="footerContent__info">Contact</p>
+            </a>
         </div>
     </footer>
 </body>

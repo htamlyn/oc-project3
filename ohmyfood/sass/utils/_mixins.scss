@@ -59,6 +59,11 @@
         float: right;
     }
 }
+@mixin loading-gradient{
+    background: -moz-linear-gradient(-10deg, $color-secondary 0%, #CB68DB 40%, $color-primary 100%);
+    background: -webkit-linear-gradient(-10deg, $color-secondary 0%, #CB68DB 40%, $color-primary 100%);
+    background: linear-gradient(170deg, $color-secondary 0%, #CB68DB 40%, $color-primary 100%);
+}
 
 @mixin button-gradient{
     background: -moz-linear-gradient(-10deg, $color-secondary 0%, #CB68DB 40%, $color-primary 100%);
@@ -122,4 +127,22 @@
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color:transparent;
+}
+
+@mixin for-tablet{
+    @media screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin for-small-desktop{
+    @media screen and (min-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin for-large-desktop{
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
 }
