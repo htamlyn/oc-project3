@@ -1,0 +1,71 @@
+@keyframes remove{
+    0% {opacity: 1;}
+    80% {opacity: 0;
+        transform: translateX(0);}
+    90% {transform: translateX(0);}
+    100% {transform: translateX(100%);}
+}
+
+@keyframes spin{
+    to {transform: rotate(360deg);
+        animation-timing-function: cubic-bezier(.39,.01,.67,.99);    
+    }
+}
+
+@keyframes wiggle{
+    0% {transform: rotate(0);}
+    10% {transform: rotate(10deg);}
+    20% {transform: rotate(0);}
+    30% {transform: rotate(-10deg);}
+    40% {transform: rotate(0);}
+    100% {transform: rotate(0);}
+}
+
+@keyframes rise{
+    0% {position: relative;
+        left: 5px;
+        bottom: 83px;
+        z-index: 2;} 
+    100% {position: relative;
+            left:5px;
+            bottom:140px;
+            z-index: 2;
+        }
+}
+
+@keyframes disappear{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes slideleft{
+    0% {transform:translateX(0);}
+    30% {transform:translateX(-76px);}
+    70% {transform: translateX(-76px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes slidelefttablet{
+    0% {transform:translateX(0);}
+    30% {transform:translateX(-100px);}
+    70% {transform: translateX(-100px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes slideleftlarge{
+    0% {transform:translateX(0);}
+    30% {transform:translateX(-90px);}
+    70% {transform: translateX(-90px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes widthreduce{
+    0% {width: 82%;}
+    30% {width: 60%;} 
+    70% {width: 60%;}
+    100% {width: 82%}
+}
+
+@keyframes tickspin{
+    to {transform: rotate(360deg);}
+}

@@ -108,7 +108,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            padding: 0.5em 0.5em 0.7em 0.5em;
+            padding: 0.5em;
             right: 29px; 
             background-color: $color-primary;
             color: white;
@@ -226,24 +226,6 @@
     }
 }
 
-
-@keyframes rise{
-    0% {position: relative;
-        left: 5px;
-        bottom: 83px;
-        z-index: 2;} 
-    100% {position: relative;
-            left:5px;
-            bottom:140px;
-            z-index: 2;
-        }
-}
-
-@keyframes disappear{
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
 .loading{
     position: fixed;
     background-color: rgba(246, 246, 246, 0.9);
@@ -274,26 +256,4 @@
     }
 }
 
-@keyframes remove{
-    0% {opacity: 1;}
-    80% {opacity: 0;
-        transform: translateX(0);}
-    90% {transform: translateX(0);}
-    100% {transform: translateX(100%);}
-}
-
-@keyframes spin{
-    to {transform: rotate(360deg);
-        animation-timing-function: cubic-bezier(.39,.01,.67,.99);    
-    }
-}
-
-@keyframes wiggle{
-    0% {transform: rotate(0);}
-    10% {transform: rotate(10deg);}
-    20% {transform: rotate(0);}
-    30% {transform: rotate(-10deg);}
-    40% {transform: rotate(0);}
-    100% {transform: rotate(0);}
-}
 
