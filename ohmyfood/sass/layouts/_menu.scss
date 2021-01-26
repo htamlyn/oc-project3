@@ -79,13 +79,13 @@
             justify-content: space-between;
         }
     }
+    &__card{
+        @include menu-card;
+    }
     &__entree{
         margin-bottom: 2em;
         @include for-small-desktop{
             width: 32%;
-        }
-        &__card{
-            @include menu-card;
         }
     }
     &__main{
@@ -93,17 +93,11 @@
         @include for-small-desktop{
             width: 32%;
         }
-        &__card{
-            @include menu-card;
-        }
     }
     &__dessert{
         margin-bottom: 2em;
         @include for-small-desktop{
             width: 32%;
-        }
-        &__card{
-            @include menu-card;
         }
     }
     &__btncontainer{

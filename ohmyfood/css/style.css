@@ -1,3 +1,43 @@
+.menu__card:nth-child(1) {
+  animation-delay: 150ms;
+}
+
+.menu__card:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.menu__card:nth-child(3) {
+  animation-delay: 450ms;
+}
+
+.menu__card:nth-child(4) {
+  animation-delay: 600ms;
+}
+
+.menu__card:nth-child(5) {
+  animation-delay: 750ms;
+}
+
+.menu__card:nth-child(6) {
+  animation-delay: 900ms;
+}
+
+.menu__card:nth-child(7) {
+  animation-delay: 1050ms;
+}
+
+.menu__card:nth-child(8) {
+  animation-delay: 1200ms;
+}
+
+.menu__card:nth-child(9) {
+  animation-delay: 1350ms;
+}
+
+.menu__card:nth-child(10) {
+  animation-delay: 1500ms;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -130,6 +170,16 @@ body {
 @keyframes tickspin {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes menucards {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
   }
 }
 .menu__btn {
@@ -361,15 +411,7 @@ body {
     justify-content: space-between;
   }
 }
-.menu__entree {
-  margin-bottom: 2em;
-}
-@media screen and (min-width: 1000px) {
-  .menu__entree {
-    width: 32%;
-  }
-}
-.menu__entree__card {
+.menu__card {
   background-color: white;
   border-radius: 1em;
   padding: 1em;
@@ -377,14 +419,19 @@ body {
   box-shadow: 0 2px 10px #d6d5d5;
   height: 44px;
   overflow: hidden;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  animation: 1000ms menucards ease-out forwards;
+  animation-delay: 100ms;
 }
-.menu__entree__card--title {
+.menu__card--title {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.1em;
   padding-bottom: 5px;
 }
-.menu__entree__card--notes {
+.menu__card--notes {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 0.9em;
@@ -394,13 +441,13 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu__entree__card--price {
+.menu__card--price {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   display: inline-block;
   float: right;
 }
-.menu__entree__card--tick {
+.menu__card--tick {
   color: white;
   background-color: #99e2d0;
   padding: 1.5em 1em;
@@ -410,36 +457,44 @@ body {
   left: 107%;
   bottom: 71px;
 }
-.menu__entree__card:hover .menu__entree__card--tick {
+.menu__card:hover .menu__card--tick {
   animation: slideleft 2s ease-in-out;
 }
 @media screen and (min-width: 600px) {
-  .menu__entree__card:hover .menu__entree__card--tick {
+  .menu__card:hover .menu__card--tick {
     animation: slidelefttablet 2s ease-in-out;
   }
 }
 @media screen and (min-width: 1000px) {
-  .menu__entree__card:hover .menu__entree__card--tick {
+  .menu__card:hover .menu__card--tick {
     animation: slideleft 2s ease-in-out;
   }
 }
 @media screen and (min-width: 1400px) {
-  .menu__entree__card:hover .menu__entree__card--tick {
+  .menu__card:hover .menu__card--tick {
     animation: slideleftlarge 2s ease-in-out;
   }
 }
-.menu__entree__card:hover .menu__entree__card--price {
+.menu__card:hover .menu__card--price {
   animation: slideleft 2s ease-in-out;
 }
-.menu__entree__card:hover .tick {
+.menu__card:hover .tick {
   animation: 345.83ms tickspin 271.557ms linear forwards;
 }
-.menu__entree__card:hover .menu__entree__card--notes {
+.menu__card:hover .menu__card--notes {
   animation: widthreduce 2s ease-in-out forwards;
 }
 @media screen and (min-width: 1400px) {
-  .menu__entree__card:hover .menu__entree__card--notes {
+  .menu__card:hover .menu__card--notes {
     animation: none;
+  }
+}
+.menu__entree {
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 1000px) {
+  .menu__entree {
+    width: 32%;
   }
 }
 .menu__main {
@@ -450,158 +505,12 @@ body {
     width: 32%;
   }
 }
-.menu__main__card {
-  background-color: white;
-  border-radius: 1em;
-  padding: 1em;
-  margin-bottom: 1em;
-  box-shadow: 0 2px 10px #d6d5d5;
-  height: 44px;
-  overflow: hidden;
-}
-.menu__main__card--title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  padding-bottom: 5px;
-}
-.menu__main__card--notes {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 0.9em;
-  display: inline-block;
-  width: 82%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu__main__card--price {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  display: inline-block;
-  float: right;
-}
-.menu__main__card--tick {
-  color: white;
-  background-color: #99e2d0;
-  padding: 1.5em 1em;
-  font-size: 1.5em;
-  width: 50px;
-  position: relative;
-  left: 107%;
-  bottom: 71px;
-}
-.menu__main__card:hover .menu__main__card--tick {
-  animation: slideleft 2s ease-in-out;
-}
-@media screen and (min-width: 600px) {
-  .menu__main__card:hover .menu__main__card--tick {
-    animation: slidelefttablet 2s ease-in-out;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .menu__main__card:hover .menu__main__card--tick {
-    animation: slideleft 2s ease-in-out;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .menu__main__card:hover .menu__main__card--tick {
-    animation: slideleftlarge 2s ease-in-out;
-  }
-}
-.menu__main__card:hover .menu__main__card--price {
-  animation: slideleft 2s ease-in-out;
-}
-.menu__main__card:hover .tick {
-  animation: 345.83ms tickspin 271.557ms linear forwards;
-}
-.menu__main__card:hover .menu__main__card--notes {
-  animation: widthreduce 2s ease-in-out forwards;
-}
-@media screen and (min-width: 1400px) {
-  .menu__main__card:hover .menu__main__card--notes {
-    animation: none;
-  }
-}
 .menu__dessert {
   margin-bottom: 2em;
 }
 @media screen and (min-width: 1000px) {
   .menu__dessert {
     width: 32%;
-  }
-}
-.menu__dessert__card {
-  background-color: white;
-  border-radius: 1em;
-  padding: 1em;
-  margin-bottom: 1em;
-  box-shadow: 0 2px 10px #d6d5d5;
-  height: 44px;
-  overflow: hidden;
-}
-.menu__dessert__card--title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.1em;
-  padding-bottom: 5px;
-}
-.menu__dessert__card--notes {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 0.9em;
-  display: inline-block;
-  width: 82%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu__dessert__card--price {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  display: inline-block;
-  float: right;
-}
-.menu__dessert__card--tick {
-  color: white;
-  background-color: #99e2d0;
-  padding: 1.5em 1em;
-  font-size: 1.5em;
-  width: 50px;
-  position: relative;
-  left: 107%;
-  bottom: 71px;
-}
-.menu__dessert__card:hover .menu__dessert__card--tick {
-  animation: slideleft 2s ease-in-out;
-}
-@media screen and (min-width: 600px) {
-  .menu__dessert__card:hover .menu__dessert__card--tick {
-    animation: slidelefttablet 2s ease-in-out;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .menu__dessert__card:hover .menu__dessert__card--tick {
-    animation: slideleft 2s ease-in-out;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .menu__dessert__card:hover .menu__dessert__card--tick {
-    animation: slideleftlarge 2s ease-in-out;
-  }
-}
-.menu__dessert__card:hover .menu__dessert__card--price {
-  animation: slideleft 2s ease-in-out;
-}
-.menu__dessert__card:hover .tick {
-  animation: 345.83ms tickspin 271.557ms linear forwards;
-}
-.menu__dessert__card:hover .menu__dessert__card--notes {
-  animation: widthreduce 2s ease-in-out forwards;
-}
-@media screen and (min-width: 1400px) {
-  .menu__dessert__card:hover .menu__dessert__card--notes {
-    animation: none;
   }
 }
 .menu__btncontainer {

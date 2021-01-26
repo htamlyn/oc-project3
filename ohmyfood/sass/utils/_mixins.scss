@@ -45,6 +45,24 @@
     box-shadow: 0 2px 10px#d6d5d5;
     height: 44px;
     overflow: hidden;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    animation: 1000ms menucards ease-out forwards;
+    animation-delay: 100ms;
+    
+    // &.first{
+ 
+    // }
+    // &.second{
+    //     animation: 1000ms menucards 300ms ease-out forwards;
+    // }
+    // &.third{
+    //     animation: 1000ms menucards 500ms ease-out forwards;
+    // }
+    // &.fourth{
+    //     animation: 1000ms menucards 700ms ease-out forwards;
+    // }
     &--title{
         @include font-text_regular;
         font-size: 1.1em;
