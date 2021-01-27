@@ -171,6 +171,7 @@
     background: linear-gradient(180deg,  $color-primary 0% , #CB68DB 60%, $color-secondary 100%);
     -webkit-text-fill-color:transparent;
     background-clip: text;  
+    color: transparent;
 }
 
 @mixin for-tablet{ 
