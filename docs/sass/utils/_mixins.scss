@@ -170,9 +170,10 @@
     background: -webkit-linear-gradient(-10deg, $color-primary 0% , #CB68DB 60%, $color-secondary 100%); 
     background: linear-gradient(180deg,  $color-primary 0% , #CB68DB 60%, $color-secondary 100%);
     -webkit-text-fill-color:transparent;
+    background-clip: text;  
 }
 
-@mixin for-tablet{
+@mixin for-tablet{ 
     @media screen and (min-width: 600px) {
         @content;
     }
