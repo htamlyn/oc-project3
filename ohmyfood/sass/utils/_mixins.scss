@@ -50,19 +50,6 @@
     opacity: 0;
     animation: 1000ms menucards ease-out forwards;
     animation-delay: 100ms;
-    
-    // &.first{
- 
-    // }
-    // &.second{
-    //     animation: 1000ms menucards 300ms ease-out forwards;
-    // }
-    // &.third{
-    //     animation: 1000ms menucards 500ms ease-out forwards;
-    // }
-    // &.fourth{
-    //     animation: 1000ms menucards 700ms ease-out forwards;
-    // }
     &--title{
         @include font-text_regular;
         font-size: 1.1em;
@@ -182,9 +169,6 @@
     background:-moz-linear-gradient(-10deg, $color-primary 0% , #CB68DB 60%, $color-secondary 100%); 
     background: -webkit-linear-gradient(-10deg, $color-primary 0% , #CB68DB 60%, $color-secondary 100%); 
     background: linear-gradient(180deg,  $color-primary 0% , #CB68DB 60%, $color-secondary 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 

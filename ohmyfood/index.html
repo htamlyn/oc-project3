@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood Homepage</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prefixed/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
@@ -22,8 +22,9 @@
         <img src="images/logo/ohmyfood.webp" alt="main logo" id="home__header-img">
     </header>
     <section class="search">
-        <input type="text" class="fas" placeholder="&#xf3c5    Paris, Belleville">
-        <div>
+        <label class="hide-element" for="citysearch">Search for a City</label>
+        <input type="text" id="citysearch" class="fas" placeholder="&#xf3c5;    Paris, Belleville">
+        <div> 
             <h2>Book the menu you like</h2>
             <p>Discover state-of-the-art restaurants we picked for you</p>
             <button class="search__btn">Explore our restaurants</button>
@@ -57,12 +58,12 @@
         <h2>Restaurants</h2>
         <div class="restaurant-card">
             <div class="restaurant-card__new">New</div>
-            <a href="full pallette.html">
+            <a href="fullpallette.html">
                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp" alt="A plate at Full Pallette">
             </a>
             <div class="restaurant-card__div">
                 <div class="restaurant-card__div--link">
-                    <a href="full pallette.html">
+                    <a href="fullpallette.html">
                         <h3>The Full Pallette</h3>
                     </a>
                 </div>
@@ -136,7 +137,7 @@
             <a href="#"><p class="footerContent__info"><i class="fas fa-utensils fa-fw"></i>Suggest a restaurant</p></a> 
             <a href="#"><p class="footerContent__info"><i class="fas fa-hands-helping fa-fw"></i>Become a partner</p></a> 
             <a href="#"><p class="footerContent__info">Legal</p></a> 
-            <a href="mailto: abc@example.com"><p class="footerContent__info">Contact</p></a> 
+            <a href="mailto:abc@example.com"><p class="footerContent__info">Contact</p></a> 
         </div>
     </footer>
 </body>

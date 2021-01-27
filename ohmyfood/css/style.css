@@ -380,9 +380,6 @@ body {
   background: -moz-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
   background: -webkit-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
   background: linear-gradient(180deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   right: 40px;
@@ -578,6 +575,18 @@ body {
   color: #6d6c6c;
 }
 
+.hide-element {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .information {
   display: flex;
   flex-direction: column;
@@ -753,9 +762,6 @@ body {
   background: -moz-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
   background: -webkit-linear-gradient(-10deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
   background: linear-gradient(180deg, #9356DC 0%, #CB68DB 60%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
   right: 40px;
